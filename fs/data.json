@@ -1,0 +1,75 @@
+{
+  "ProviderConfigs": [
+    {
+      "Site": "TMDb",
+      "Priority": 11
+    },
+    {
+      "Site": "KinoPub",
+      "Priority": 10
+    },
+    {
+      "Site": "anime365",
+      "Priority": 10
+    },
+    {
+      "Site": "VideoCDN",
+      "Priority": 9,
+      "Mirrors": [ "http://1.svetacdn.in" ]
+    },
+    {
+      "Site": "SeasonVar",
+      "Priority": 9
+    },
+    {
+      "Site": "HDVB",
+      "Priority": 9,
+      "Mirrors": [ "https://vid1610156835256.vb17120ayeshajenkins.pw" ]
+    },
+    {
+      "Site": "UStore",
+      "Priority": 6,
+      "EnforceDisabled": true
+    },
+    {
+      "Site": "Rezka",
+      "Priority": 7,
+      "Mirrors": [ "https://rezkery.com" ]
+    },
+    {
+      "Site": "Filmix",
+      "Priority": 8,
+      "Mirrors": [ "https://filmix.buzz", "http://filmix.vip:8080" ]
+    },
+    {
+      "Site": "Zona",
+      "Mirrors": [ "https://w122.zona.plus" ]
+    },
+    {
+      "Site": "Kinovod",
+      "Mirrors": [ "https://kinovod259.cc" ]
+    },
+    {
+      "Site": "Collaps",
+      "EnforceDisabled": true
+    },
+    {
+      "Site": "Bazon",
+      "EnforceDisabled": true
+    },
+    {
+      "Site": "Fanserials",
+      "EnforceDisabled": true  
+    }
+  ],
+  "LatestVersionPerDistributionType": {
+    "Sideloaded": {
+      "Version": "1.47.7",
+      "FallbackInstallPage": "https://fsclient.github.io/fs/"
+    },
+    "AppInstaller": {
+      "Version": "1.47.7",
+      "FallbackInstallPage": "https://fsclient.github.io/fs/"
+    }
+  }
+}

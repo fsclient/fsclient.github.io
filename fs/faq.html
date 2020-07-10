@@ -1,0 +1,70 @@
+﻿<html>
+<head>
+    <title>
+        FAQ для приложения FS Клиент
+    </title>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        body {
+            background-color: #f6f5f4;
+            color: #545454;
+            font-size: 16px;
+            line-height: 20px;
+            font-family: arial,sans-serif;
+            margin: 20px 40px 0 40px;
+        }
+
+        .faqHeader {
+            font-size: 27px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            FAQ в процессе написания.
+            <br />
+            Если у вас есть пожелания по добавлению вопросов, то обращайтесь на <a href="mailto:fsclientdev@gmail.com">fsclientdev@gmail.com</a>
+        </div>
+
+        <div class="" id="accordion">
+        </div>
+    </div>
+    <script>
+        $(function () {
+            var converter = new showdown.Converter();
+            var accordion = $("#accordion");
+            var questionNum = 0;
+            $.getJSON("faq.json", function (data) {
+                data.forEach(function (section) {
+                    if (!section.Header) {
+                        return;
+                    }
+                    accordion.append("<div class='faqHeader'>" + section.Header + "</div>");
+                    section.Questions.forEach(function (question) {
+                        var card = $("<div class='card'></div>");
+                        var questionId = "collapse" + questionNum++;
+                        card.append("<div class='card-header'><h4 class='card-header'><a class='accordion-toggle' data-toggle='collapse' data-parent='#accordion' href='#" + questionId + "'>"
+                            + question.Header
+                            + "</a></h4></div>");
+                        card.append("<div id='" + questionId + "' class='panel-collapse collapse'><div class='card-block'>"
+                            + converter.makeHtml(question.Answer)
+                            + "</div></div>");
+                        accordion.append(card);
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

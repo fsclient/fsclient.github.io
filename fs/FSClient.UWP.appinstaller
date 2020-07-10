@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="https://fsclient.github.io/fs/FSClient.UWP.appinstaller"
+	Version="1.47.7.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="24831TIRRSOFT.FS"
+		Version="1.47.7.0"
+		Publisher="CN=A3BB68C0-CB4F-4165-B12D-B892AC74D519"
+		Uri="https://fsclient.github.io/fs/FSClient.UWP/FSClient.UWP.appxbundle" />
+	<Dependencies>
+		<Package
+			Name="Microsoft.UI.Xaml.2.4"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="2.42007.9001.0"
+			ProcessorArchitecture="x86"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/x86/Microsoft.UI.Xaml.2.4.appx" />
+		<Package
+			Name="Microsoft.UI.Xaml.2.4"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="2.42007.9001.0"
+			ProcessorArchitecture="x64"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/x64/Microsoft.UI.Xaml.2.4.appx" />
+		<Package
+			Name="Microsoft.UI.Xaml.2.4"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="2.42007.9001.0"
+			ProcessorArchitecture="arm"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/arm/Microsoft.UI.Xaml.2.4.appx" />
+		<Package
+			Name="Microsoft.NET.Native.Framework.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="2.2.29512.0"
+			ProcessorArchitecture="x86"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/x86/Microsoft.NET.Native.Framework.2.2.appx" />
+		<Package
+			Name="Microsoft.NET.Native.Framework.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="2.2.29512.0"
+			ProcessorArchitecture="x64"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/x64/Microsoft.NET.Native.Framework.2.2.appx" />
+		<Package
+			Name="Microsoft.NET.Native.Framework.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="2.2.29512.0"
+			ProcessorArchitecture="arm"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/arm/Microsoft.NET.Native.Framework.2.2.appx" />
+		<Package
+			Name="Microsoft.NET.Native.Runtime.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="2.2.28604.0"
+			ProcessorArchitecture="x86"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/x86/Microsoft.NET.Native.Runtime.2.2.appx" />
+		<Package
+			Name="Microsoft.NET.Native.Runtime.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="2.2.28604.0"
+			ProcessorArchitecture="x64"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/x64/Microsoft.NET.Native.Runtime.2.2.appx" />
+		<Package
+			Name="Microsoft.NET.Native.Runtime.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="2.2.28604.0"
+			ProcessorArchitecture="arm"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/arm/Microsoft.NET.Native.Runtime.2.2.appx" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="14.0.29231.0"
+			ProcessorArchitecture="arm"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/arm/Microsoft.VCLibs.ARM.14.00.appx" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="14.0.29231.0"
+			ProcessorArchitecture="x64"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			Version="14.0.29231.0"
+			ProcessorArchitecture="x86"
+			Uri="https://fsclient.github.io/fs/FSClient.UWP/Dependencies/x86/Microsoft.VCLibs.x86.14.00.appx" />
+	</Dependencies>
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="1" />
+	</UpdateSettings>
+</AppInstaller>
