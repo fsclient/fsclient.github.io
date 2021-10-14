@@ -34,12 +34,12 @@
     {
       "Site": "Rezka",
       "Priority": 7,
-      "Mirrors": [ "https://justivi.com" ]
+      "Mirrors": [ "http://upivi.com" ]
     },
     {
       "Site": "Filmix",
       "Priority": 8,
-      "Mirrors": [ "https://filmix.buzz", "http://filmix.vip:8080" ]
+      "Mirrors": [ "https://filmix.beer", "http://filmix.vip:8080" ]
     },
     {
       "Site": "Zona",
